@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+		html, body { margin:0; padding: 0; height:100%; }
+		.header { width: 100%; height: 10%; background: #AEE8FF; font-weight: 600 ; font-size: 19px; text-align: center; }
+		.nav { width: 5%; height: 80%; float: left; }
+		.section { width: 90%; height: 80%; float: left; }
+		.aside { width: 5%; height: 80%; float: left; }
+
+
+		#b{
+			list-style: none;
+			padding-left: 0;
+			text-indent: 0.3em
+		}
+		li{
+
+		}
+		#a {
+			text-indent: -0.3em;
+			font-size: 0.8em;
+		}
+		#c {
+			padding-top: 5px;
+		}
+
+	</style>
+</head>
+<body>
+<header class="header"><br>알파벳 블록을 활용한 영어 학습 앱</header>
+<nav class="nav"></nav>
+<section class="section">
+    <br>
+    <ul id="b">
+        <li >○ <strong>프로젝트 소개</strong>
+            <ul id="c">
+                <li id="a">영어에 대한 아이의 자율학습 및 재미를 충족하는 애플리케이션 개발</li>
+                <li id="a">알파벳 블록들을 직접 배열하여 앱의 영상처리 기능을 통해 단어의 뜻을 알려주는 시스템</li>
+                <li id="a">블록을 사용해서 일종의 놀이를 통하여 영어에 대한 접근성을 높여주는 프로젝트</li>
+            </ul>
+        </li>
+        <br>
+        <li >○ <strong>개발배경 및 필요성</strong>
+            <ul id="c">
+                <li id="a">밀레니얼, 즉 젊은 세대의 부모님들은 아이들의 조기교육에 관심이 높음</li>
+                <li id="a">애플리케이션과 알파벳 블록을 통해 학습하기에 기존의 학습 장난감보다 비용 절감 </li>
+                <li id="a">아이들이 재미를 느끼는 학습 놀이를 통해 영어에 재미를 붙임으로써 자발적인 공부에 도움이 됨</li>
+            </ul>
+        </li>
+        <br>
+        <li>○ <strong>개발목표</strong>
+            <ul id="c">
+                <li id="a">영어단어를 한국어로 한국어를 영어로 번역해주는 서비스 API 이용</li>
+                <li id="a">애플리케이션에 인식된 번역된 문자를 음성으로 출력해주는 애플리케이션 개발</li>
+                <li id="a">영상처리를 통해 문자를 인식해주고 다른 배경이 찍혀도 무관하게 문자를 인식해주는 기능 개발</li>
+            </ul>
+        </li>
+        <br>
+        <li>○ <strong>구성도</strong>
+            <ul id="c">
+                <table border="1" style="border-collapse:collapse">
+                    <tr>
+                        <td><img src="kid_app.png" width="320px"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#AEE8FF" align="center">프로젝트 흐름도</td>
+                    </tr>
+                </table>
+                <br>
+                <li id="a">Machine Learning을 이용한 텍스트 인식을 통해 블록에 적힌 문자를 인식</li>
+                <li id="a">인식된 문자 데이터를 애플리케이션에 받아 번역해주는 API 서비스에 전달</li>
+                <li id="a">API에서 전달받은 문자 데이터를 한국어는 영어로 영어는 한국어로 번역</li>
+                <li id="a">번역한 문자들을 Speech API를 통해 스마트폰으로 음성 출력</li>
+            </ul>
+        </li>
+        <br>
+        <li>○ <strong>작품 소개 영상 및 시연 영상</strong>
+            <ul id="c">
+                <video src="크리에이티브 4차 공모전 영상.mp4" width="320" height="240" controls autoplay></video>
+            </ul>
+        </li>
+
+        </ul>
+</section>
+<aside class="aside"></aside>
+<footer class="footer">
+</footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEA(Smart Exhibition App)"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="30dp"
+        android:background="#808080"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nfc_img"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="110dp"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:id="@+id/login_emailEt"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="330dp"
+        android:hint="Email"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+    />
+
+    <EditText
+        android:id="@+id/login_passwordEdt"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="400dp"
+        android:hint="password"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="20dp"
+        android:text="LOGIN"
+        />
+
+
+    <TextView
+        android:id="@+id/register_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:text="가입하기"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagDesc"
+        android:text="nfc 태깅" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEA(Smart Exhibition App)"
+        android:textSize="27sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/test_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/setting_icon"
+        android:layout_toRightOf="@+id/title"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:background="#00ffffff"
+        android:scaleType="fitCenter"
+        />
+
+
+
+    <View
+        android:id="@+id/main_line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#919191"
+        android:layout_below="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_line1"
+            android:layout_above="@+id/main_line2">
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="참가 신청가능한 전시회 목록"
+                    android:textSize="23sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:background="#6A6A6A"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal" />
+
+                <Button
+                    android:id="@+id/home_btn_1"
+                    android:layout_width="350dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/btn_custom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:text="정보통신대학 공학제"
+                    android:textSize="25dp"
+                    android:textColor="#6A6A6A"
+                    />
+
+                <Button
+                    android:id="@+id/home_btn_2"
+                    android:layout_width="350dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/btn_custom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:text="기타 공모전"
+                    android:layout_below="@+id/home_btn_1"
+                    android:textSize="25dp"
+                    android:textColor="#6A6A6A"
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/rr_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="마이페이지"
+                    android:textSize="23sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:background="#6A6A6A"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal" />
+
+                <ListView
+                    android:id="@+id/list_vw_r"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rr_text"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/message_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="#00ffffff"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/message"
+                    android:padding="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/m_message_view"
+                    android:layout_width="350dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/m_view"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/m_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:text="전시회 참가자가 등록하신 부스에 방문했습니다."
+                    android:textSize="23sp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="80dp"
+                    android:visibility="gone"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/ll_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="참여중인 전시회 작품 목록"
+                    android:textSize="23sp"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:background="#6A6A6A"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal" />
+
+                <ListView
+                    android:id="@+id/list_vw"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_text"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </FrameLayout>
+
+
+    <View
+        android:id="@+id/main_line2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#919191"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        />
+
+    <ImageButton
+        android:id="@+id/menu_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_icon"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageButton
+        android:id="@+id/home_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_icon"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/mypage_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#00ffffff"
+        android:scaleType="fitXY"
+        android:src="@drawable/mypage_icon"
+        android:paddingTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        />
+
+
+</RelativeLayout>

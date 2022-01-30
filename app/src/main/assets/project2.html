@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+		html, body { margin:0; padding: 0; height:100%; }
+		.header { width: 100%; height: 10%; background: #FFB4FF; font-weight: 600 ; font-size: 19px; text-align: center; }
+		.nav { width: 5%; height: 80%; float: left; }
+		.section { width: 90%; height: 80%; float: left; }
+		.aside { width: 5%; height: 80%; float: left; }
+
+
+		#b{
+			list-style: none;
+			padding-left: 0;
+			text-indent: 0.3em
+		}
+		li{
+			text-indent:
+		}
+		#a {
+			text-indent: -0.3em;
+			font-size: 0.8em;
+		}
+		#c {
+			padding-top: 5px;
+		}
+
+	</style>
+</head>
+<body>
+<header class="header"><br>알파벳 블록을 활용한 영어 학습 앱</header>
+<nav class="nav"></nav>
+<section class="section">
+    <br>
+    <ul id="b">
+        <li >○ <strong>프로젝트 소개</strong>
+            <ul id="c">
+                <li id="a">온도 센서를 사용한 고온, 화재 감지하는 자율주행 화재 경보 자동차</li>
+                <li id="a">블루투스 센서를 사용하여 휴대폰으로 화재 정보 수신 가능</li>
+                <li id="a">고온, 화재 신호 입력 후 시각, 청각 경보 발생</li>
+            </ul>
+        </li>
+        <br>
+        <li >○ <strong>개발배경 및 필요성</strong>
+            <ul id="c">
+                <li id="a">무인 시스템으로 인명 피해 감소</li>
+                <li id="a">자율 주행 화재 경보 자동차로 소방업계 인력난 해결 가능</li>
+                <li id="a">동적 방화 시장 중 ICT, IoT기술 결합 제품이 미래 소방 시장 선도</li>
+            </ul>
+        </li>
+        <br>
+        <li>○ <strong>설계도</strong>
+            <ul id="c">
+                <table border="1" style="border-collapse:collapse">
+                    <tr>
+                        <td><img src="프로젝트2.png" width="150px"></td>
+                        <td><img src="프로젝트2_1.png" width="150px"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#AEE8FF" align="center">자율 주행 파트 설계도</td>
+                        <td bgcolor="#AEE8FF" align="center">화재 경보 파트 설계도</td>
+                    </tr>
+                </table>
+                <br>
+                <li id="a">아두이노 Uno에 모터 드라이버 적층, 애물 감지시 자동차 회피를 위한 소스코드 작성</li>
+                <li id="a">FQ-014 5V 능동 DC부저, LED, HC-06 결선, 설정온도보다 높은 온도 감지시, 부저와 LED 신호 출력</li>
+                <li id="a">HC-06 블루투스 모듈을 통한 스마트폰과의 무선 통신</li>
+                <li id="a">화재경보기 시리얼 모니터 값을 스마트폰으로 전송 후 출력 </li>
+            </ul>
+        </li>
+        <br>
+        <li>○ <strong>작품 소개 영상 및 시연 영상</strong>
+            <ul id="c">
+                <video src="자율주행영상.mp4" width="320" height="240" controls autoplay></video>
+            </ul>
+        </li>
+
+        </ui>
+</section>
+<aside class="aside"></aside>
+<footer class="footer">
+</footer>
+</body>
+</html>
